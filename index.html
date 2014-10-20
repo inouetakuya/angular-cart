@@ -7,6 +7,182 @@
   <title>AngularJS Cart</title>
 </head>
 <body>
-<p>Hello, AngularJS Cart!!</p>
+
+<h2>AngularJS Cart</h2>
+
+<form>
+  <div class="cart">
+    <p class="total_price">合計: &yen;<span>10,800</span></p>
+
+    <div class="products">
+      <ul>
+        <li class="product">
+          <p class="name">Silkeborg/シルケボー/ブランケット（グレー・ボーダー）</p>
+          <p class="price">&yen; 10,800</p>
+          <input class="quantity" type="text"> 個
+          <p class="subtotal_price">小計: &yen;<span>10,800</span></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="delivery">
+    <h3>配送先</h3>
+
+    <div>
+      <label>名前</label>
+      <input class="customer_name" type="text">
+    </div>
+
+    <div>
+      <label>郵便番号</label>
+      <input class="zip_code" type="text">
+    </div>
+
+    <div>
+      <label>住所</label>
+
+      <select>
+        <option value="選択してください">選択してください</option>
+        <option value="北海道">北海道</option>
+        <option value="青森県">青森県</option>
+        <option value="岩手県">岩手県</option>
+        <option value="宮城県">宮城県</option>
+        <option value="秋田県">秋田県</option>
+        <option value="山形県">山形県</option>
+        <option value="福島県">福島県</option>
+        <option value="茨城県">茨城県</option>
+        <option value="栃木県">栃木県</option>
+        <option value="群馬県">群馬県</option>
+        <option value="埼玉県">埼玉県</option>
+        <option value="千葉県">千葉県</option>
+        <option selected="selected" value="東京都">東京都</option>
+        <option value="神奈川">神奈川県</option>
+        <option value="新潟県">新潟県</option>
+        <option value="富山県">富山県</option>
+        <option value="石川県">石川県</option>
+        <option value="福井県">福井県</option>
+        <option value="山梨県">山梨県</option>
+        <option value="長野県">長野県</option>
+        <option value="岐阜県">岐阜県</option>
+        <option value="静岡県">静岡県</option>
+        <option value="愛知県">愛知県</option>
+        <option value="三重県">三重県</option>
+        <option value="滋賀県">滋賀県</option>
+        <option value="京都府">京都府</option>
+        <option value="大阪府">大阪府</option>
+        <option value="兵庫県">兵庫県</option>
+        <option value="奈良県">奈良県</option>
+        <option value="和歌山">和歌山県</option>
+        <option value="鳥取県">鳥取県</option>
+        <option value="島根県">島根県</option>
+        <option value="岡山県">岡山県</option>
+        <option value="広島県">広島県</option>
+        <option value="山口県">山口県</option>
+        <option value="徳島県">徳島県</option>
+        <option value="香川県">香川県</option>
+        <option value="愛媛県">愛媛県</option>
+        <option value="高知県">高知県</option>
+        <option value="福岡県">福岡県</option>
+        <option value="佐賀県">佐賀県</option>
+        <option value="長崎県">長崎県</option>
+        <option value="熊本県">熊本県</option>
+        <option value="大分県">大分県</option>
+        <option value="宮崎県">宮崎県</option>
+        <option value="鹿児島">鹿児島県</option>
+        <option value="沖縄県">沖縄県</option>
+      </select>
+    </div>
+
+    <div>
+      <label>電話番号</label>
+      <input class="phone_number" type="text">
+    </div>
+
+    <div>
+      <label>メールアドレス</label>
+      <input class="email" type="text">
+    </div>
+
+    <div>
+      <h3>配送方法</h3>
+
+      <select class="delivery_method">
+        <option value="選択してください">選択してください</option>
+        <option selected="selected" value="メール便">メール便</option>
+        <option value="クロネコヤマト">クロネコヤマト</option>
+        <option value="エコ配">エコ配</option>
+      </select>
+    </div>
+  </div>
+
+  <div>
+    <h3>お支払い方法</h3>
+
+    <select class="payment_method">
+      <option value="選択してください">選択してください</option>
+      <option value="クレジットカード">クレジットカード</option>
+      <option value="コンビニ決済">コンビニ決済</option>
+      <option value="銀行振込">銀行振込</option>
+      <option value="代引き">代引き</option>
+    </select>
+  </div>
+
+  <div class="credit_card">
+    <div>
+      <label>カード番号</label>
+      <input class="number" type="text">
+    </div>
+
+    <div>
+      <label>カード名義</label>
+      <input class="name" type="text">
+    </div>
+
+    <div>
+      <label>有効期限</label>
+      <select class="expire_month">
+        <option value="01">01</option>
+        <option value="02">02</option>
+        <option value="03">03</option>
+        <option value="04">04</option>
+        <option value="05">05</option>
+        <option value="06">06</option>
+        <option value="07">07</option>
+        <option value="08">08</option>
+        <option value="09">09</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+      <span>月</span>
+
+      <select class="expire_year">
+        <option value="2014">2014</option>
+        <option value="2015">2015</option>
+        <option value="2016">2016</option>
+        <option value="2017">2017</option>
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+      </select>
+      <span>年</span>
+    </div>
+
+    <div>
+      <label>セキュリティコード</label>
+      <input class="security_code" type="text">
+    </div>
+  </div>
+
+  <div>
+    <input class="button" type="submit" value="注文内容を確認する">
+  </div>
+</form>
+
 </body>
 </html>
