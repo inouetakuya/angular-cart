@@ -10,7 +10,7 @@
 
 <h2>AngularJS Cart</h2>
 
-<form ng-controller="CartController">
+<form ng-app="Cart" ng-controller="CartController">
   <div class="cart">
     <p class="total_price">合計: &yen;<span>10,800</span></p>
 
@@ -18,9 +18,9 @@
       <ul>
         <li class="product">
           <p class="name">Silkeborg/シルケボー/ブランケット（グレー・ボーダー）</p>
-          <p class="price">&yen; 10,800</p>
-          <input class="quantity" type="text"> 個
-          <p class="subtotal_price">小計: &yen;<span>10,800</span></p>
+          <p class="price">&yen; {{price}}</p>
+          <input class="quantity" type="number" ng-model="quantity"> 個
+          <p class="subtotal_price">小計: &yen;<span>{{subtotal_price()}}</span></p>
         </li>
       </ul>
     </div>
